@@ -1,24 +1,36 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking} 
-\moderncvcolor{blue} 
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.75]{geometry}
 
-% Personal Info
-\name{John}{Doe}
-\title{Software Engineer}
-\phone[mobile]{+33~6~00~00~00~00}
-\email{john.doe@email.com}
-\social[github]{johndoe}
-\social[linkedin]{johndoe}
+% ModernCV themes
+\moderncvstyle{classic}       % style options: 'casual', 'classic', 'banking'
+\moderncvcolor{blue}          % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage{fontspec}         % for modern font
+% \setmainfont{Inter}           % modern font
+
+% Adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+% Personal data
+\name{Arthur}{PINEL}
+\title{Engine / Systems Programmer - C++}
+\address{Paris, France}{Open to international positions}{}
+\email{arthur.pinel@ensiie.eu}
+\social[linkedin]{arthur-pinel-dev}
+\social[github]{LePeruvienn}
+\homepage{leperuvienn.github.io}
 
 \begin{document}
+
 \makecvtitle
 
-% --- Load Sections ---
-\input{sections/experience}
-\input{sections/projects}
-\input{sections/skills}
-\input{sections/education}
+\input{sections/profile.tex}
+
+\input{sections/skills.tex}
+\input{sections/experience.tex}
+\input{sections/projects.tex}
+\input{sections/education.tex}
 
 \end{document}
