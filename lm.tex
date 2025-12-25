@@ -1,0 +1,30 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{classic}       % style options: 'casual', 'classic', 'banking'
+\moderncvcolor{blue}          % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% Personal data
+\input{sections/info.tex}
+
+\begin{document}
+
+% --- Informations sur le destinataire ---
+\recipient{Service Recrutement}{Nom de l'Entreprise\\123 Avenue des Champs-Élysées\\75008 Paris}
+\date{\today}
+\opening{Madame, Monsieur,} % Salutation
+\closing{Je reste à votre entière disposition pour un futur entretien et vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.}
+\enclosure[Joint]{Curriculum Vitæ} % Liste des pièces jointes
+
+\makelettertitle % Génère l'en-tête et les coordonnées
+
+% --- Corps de la lettre ---
+Je vous adresse ma candidature pour le poste de \textbf{[Intitulé du poste]} au sein de votre entreprise. Fort d'une expérience en \dots, j'ai développé des compétences en \dots qui correspondent au profil que vous recherchez.
+
+Travailler chez \textbf{[Nom de l'Entreprise]} représente pour moi une opportunité de mettre à profit ma rigueur et mon esprit d'équipe, tout en contribuant à vos projets de \dots.
+
+Mon parcours académique à \dots m'a permis de maîtriser des outils tels que \dots. Je suis convaincu que ma motivation et ma capacité d'adaptation seront des atouts pour votre équipe.
+
+\makeletterclosing % Génère la signature et le mot de fin
+
+\end{document}
