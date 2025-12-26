@@ -83,8 +83,33 @@ get_div_content() {
 }
 
 translate_style() {
+    # Bold
     sed -i 's/\*\*\([^*]*\)\*\*/\\textbf\{\1\}/g' "$1"
+    # Italic
     sed -i 's/\*\([^*]*\)\*/\\textit\{\1\}/g' "$1"
+    # List
+    gawk -i inplace '
+    /^- / {
+      if (!in_list) {
+        print "\\begin{itemize}"
+        in_list = 1
+      }
+      sub(/^- /, "\\item ")
+      print
+      next
+    }
+    {
+      if (in_list) {
+        print "\\end{itemize}"
+        in_list = 0
+      }
+      print
+    }
+    END {
+      if (in_list)
+        print "\\end{itemize}"
+    }
+    ' "$1"
 }
 
 translate_newlines() {

@@ -8,7 +8,7 @@ et je suis la
 </subtitle>
 
 <date>
-aujourd'hui le jour ajd
+\today
 </date>
 
 <opening>
@@ -24,6 +24,12 @@ mais c'est vraiment cool la vie en vrai de vrai
 prenez moi svp
 
 NON EN FAIT JE SUIS **FEUR**
+
+- Je suis gentil
+- méchant
+- mais gentil
+
+PROUT
 </main>
 
 <closing>
