@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./scripts/init-vars.sh
+source ./scripts/init.sh
 
 # --- CONSTANTS ---
 CL_PREFIX="cl_"
@@ -25,6 +25,9 @@ DEFAULT_DATE="\today"
 name="$1"
 path="$2"
 lang="$3"
+
+# update lang
+update_lang "$lang"
 
 # Get input
 input="$(get_input $IN_CL_DIR $name $path)"

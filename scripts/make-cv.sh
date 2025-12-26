@@ -1,3 +1,3 @@
 #!/bin/bash
 
-source ./scripts/init-vars.sh
+source ./scripts/init.sh

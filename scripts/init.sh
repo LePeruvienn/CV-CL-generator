@@ -21,6 +21,8 @@ export COMP_DIR="$OUT_DIR/components"
 export CL_COMP_DIR="$COMP_DIR/$CL"
 export CV_COMP_DIR="$COMP_DIR/$CV"
 
+export LANG_FILE="$COMP_DIR/lang.tex"
+
 export DEFAULT_CV_NAME="CV"
 export DEFAULT_CL_NAME="CL"
 
@@ -70,6 +72,10 @@ get_input() {
     fi
 
     echo "$input"
+}
+
+update_lang() {
+    update_content "\usepackage[$1]{babel}" $LANG_FILE
 }
 
 get_div_content() {
