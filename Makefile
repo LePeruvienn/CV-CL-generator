@@ -7,7 +7,7 @@ LATEX_FLAGS = -pdf -outdir=$(OUT_DIR) -interaction=nonstopmode
 all: cv lm
 
 test:
-	./scripts/make-cl.sh
+	./scripts/make-cl.sh $(FILE)
 
 cv:
 	latexmk $(LATEX_FLAGS) $(CV_FILE).tex

@@ -4,22 +4,31 @@
 \moderncvstyle{classic}       % style options: 'casual', 'classic', 'banking'
 \moderncvcolor{blue}          % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
 
+% Character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage{fontspec}         % for modern font
+% \setmainfont{Inter}           % modern font
+
+% Adjust the page margins
+\usepackage[scale=0.84]{geometry}
+
 % Personal data
 \input{sections/info.tex}
 
 \begin{document}
 
 % Dest Info
-\input{sections/lm/recipient.tex}
-\input{sections/lm/date.tex}
-\input{sections/lm/opening.tex}
-\input{sections/lm/closing.tex}
+\input{sections/cl/recipient.tex}
+\input{sections/cl/date.tex}
+\input{sections/cl/opening.tex}
+\input{sections/cl/closing.tex}
 
 % Create header
 \makelettertitle
 
 % Letter content
-\input{sections/lm/content.tex}
+\input{sections/cl/content.tex}
 
 % Letter closing sentence
 \makeletterclosing 

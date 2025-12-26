@@ -1,5 +1,5 @@
 <title>
-Nom de l'entreprise
+Nom de l'entreprise 2
 </title>
 
 <subtitle>
