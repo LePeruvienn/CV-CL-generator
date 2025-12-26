@@ -1,7 +1,7 @@
 # LateX Makefile
 CV_FILE = cv
 LM_FILE = lm
-OUT_DIR = out
+OUT_DIR = output
 LATEX_FLAGS = -pdf -outdir=$(OUT_DIR) -interaction=nonstopmode
 
 all: cv lm
