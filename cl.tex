@@ -9,16 +9,19 @@
 
 \begin{document}
 
-% --- Informations sur le destinataire ---
-\recipient{Service Recrutement}{Nom de l'Entreprise\\123 Avenue des Champs-Élysées\\75008 Paris}
-\date{\today}
+% Dest Info
+\input{sections/lm/recipient.tex}
+\input{sections/lm/date.tex}
 \input{sections/lm/opening.tex}
 \input{sections/lm/closing.tex}
 
+% Create header
 \makelettertitle
 
+% Letter content
 \input{sections/lm/content.tex}
 
+% Letter closing sentence
 \makeletterclosing 
 
 \end{document}

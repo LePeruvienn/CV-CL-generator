@@ -1,3 +1,16 @@
+<title>
+Nom de l'entreprise
+</title>
+
+<subtitle>
+7 avenue des Feurs, Les Ulis
+et je suis la
+</subtitle>
+
+<date>
+\today
+</date>
+
 <opening>
 Madame, Monsieur
 </opening>
@@ -6,9 +19,9 @@ Madame, Monsieur
 Salut c'est **Arthur** et j'aimerais bien *vraaaaiment* gagner au foot et tout.
 Fin vraiment c'est trop **BIEN** *whaouuuu* !
 
-mais c'est vraiment coo la vie
+mais c'est vraiment cool la vie en vrai de vrai
 
-OUI
+prenez moi svp
 </main>
 
 <closing>
