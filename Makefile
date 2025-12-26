@@ -1,19 +1,19 @@
-# LateX Makefile
+# CONSTANTS
 CV_FILE = cv
 LM_FILE = lm
 OUT_DIR = out
 LATEX_FLAGS = -pdf -outdir=$(OUT_DIR) -interaction=nonstopmode
 
-all: cv lm
+# ARGS DEFAULT VALUES
+FILENAME ?= NULL
+FILEPATH ?= NULL
+LANGUAGE ?= english
 
-test:
-	./scripts/make-cl.sh $(FILE)
+cl:
+	./scripts/make-cl.sh $(FILENAME) $(FILEPATH) $(LANGUAGE)
 
 cv:
 	latexmk $(LATEX_FLAGS) $(CV_FILE).tex
-
-lm:
-	latexmk $(LATEX_FLAGS) $(LM_FILE).tex
 
 clean:
 	latexmk -outdir=$(OUT_DIR) -c

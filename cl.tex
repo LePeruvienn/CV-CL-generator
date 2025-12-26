@@ -3,6 +3,7 @@
 % ModernCV themes
 \moderncvstyle{classic}       % style options: 'casual', 'classic', 'banking'
 \moderncvcolor{blue}          % color options 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+\usepackage[french]{babel} 
 
 % Character encoding
 \usepackage[utf8]{inputenc}
@@ -14,21 +15,21 @@
 \usepackage[scale=0.84]{geometry}
 
 % Personal data
-\input{sections/info.tex}
+\input{data.tex}
 
 \begin{document}
 
 % Dest Info
-\input{sections/cl/recipient.tex}
-\input{sections/cl/date.tex}
-\input{sections/cl/opening.tex}
-\input{sections/cl/closing.tex}
+\input{output/components/cl/recipient.tex}
+\input{output/components/cl/date.tex}
+\input{output/components/cl/opening.tex}
+\input{output/components/cl/closing.tex}
 
 % Create header
 \makelettertitle
 
 % Letter content
-\input{sections/cl/content.tex}
+\input{output/components/cl/content.tex}
 
 % Letter closing sentence
 \makeletterclosing 
