@@ -3,6 +3,11 @@ source ./scripts/init.sh
 
 # --- CONSTANTS ---
 
+CV_TITLE="$CV_COMP_DIR/title.tex"
+CV_PROFILE="$CV_COMP_DIR/profile.tex"
+
+DIV_TITLE="title"
+DIV_PROFILE="profile"
 
 # --- SCRIPT ---
 
@@ -14,7 +19,7 @@ lang="$3"
 update_lang "$lang"
 
 # Get input
-input="$(get_input $IN_CL_DIR $name $path)"
+input="$(get_input $IN_CV_DIR $name $path)"
 
 echo "INPUT FILE: $input"
 
@@ -25,6 +30,12 @@ if [ ! -f "$input" ]; then
 fi
 
 filename=$(echo "$input" | sed 's|.*/||; s|\.md||')
+
+title=$(get_div_content "$DIV_TITLE" "$input")
+profile=$(get_div_content "$DIV_PROFILE" "$input")
+
+update_content "\title{$title}" $CV_TITLE
+update_content "$profile" $CV_PROFILE
 
 # Compiling
 latexmk $LATEX_FLAGS $CV_FILE

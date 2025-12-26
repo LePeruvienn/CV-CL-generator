@@ -25,11 +25,11 @@ prenez moi svp
 
 NON EN FAIT JE SUIS **FEUR**
 
-- Je suis gentil
-- méchant
-- mais gentil
+- Je suis **gentil**
+- méchant **vraiment** de fou
+- mais gentil *liption*
 
-PROUT
+PROUT A
 </main>
 
 <closing>
